@@ -539,13 +539,13 @@ nav {
   transform: scale(1.05);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) and (min-width: 769px) {
   .clients-gallery {
-    height: 660px; /* Proporcional para mobile, talvez 2 fileiras ou fotos menores */
+    height: 300px;
   }
   .client-photo {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 280px;
   }
 }
 
@@ -816,3 +816,325 @@ nav {
 .footer .brand-name { color: rgba(255,255,255,0.7); }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); }
 .footer-bottom p { color: rgba(255,255,255,0.5); }
+
+/* ========================================= */
+/* MOBILE RESPONSIVO (max-width: 768px)      */
+/* ========================================= */
+@media (max-width: 768px) {
+  /* --- Variáveis e Base --- */
+  :root {
+    --section-padding: 4rem 5%;
+    --nav-height: 70px;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  /* --- Navbar --- */
+  nav {
+    padding: 0 4%;
+  }
+  .logo {
+    height: 45px;
+  }
+  .nav-cta {
+    font-size: 0.75rem;
+    padding: 0.8rem 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  /* --- Botões --- */
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  /* --- Hero --- */
+  .hero {
+    min-height: auto;
+    padding: calc(var(--nav-height) + 2rem) 5% 3rem;
+  }
+  .hero .content-wrapper {
+    gap: 2rem;
+  }
+  .hero-text h1 {
+    font-size: 2.4rem;
+  }
+  .hero-image-container {
+    height: 350px;
+  }
+  .hero-arch-bg {
+    width: 260px;
+    height: 330px;
+  }
+  .hero-subheadline {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-support {
+    font-size: 1.3rem;
+  }
+  .hero-complement {
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+  }
+
+  /* --- Seções Gerais --- */
+  .section {
+    padding: 4rem 5%;
+  }
+  .section-title {
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+    margin-bottom: 1.5rem;
+  }
+  .content-wrapper {
+    max-width: 100%;
+  }
+
+  /* --- Seção Dor (Pain) --- */
+  .section-pain {
+    padding: 4rem 5%;
+  }
+  .pain-text-block {
+    font-size: 1.15rem;
+  }
+  .pain-text-block p {
+    margin-bottom: 1.2rem;
+  }
+  .highlight-quote {
+    font-size: 1.8rem;
+    margin: 3rem 0 !important;
+  }
+
+  /* --- Seção O Que É (Split Layout) --- */
+  .split-layout {
+    gap: 2rem;
+  }
+  .image-premium,
+  .arch-mask {
+    height: 350px;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .pillar-number {
+    font-size: 2rem;
+  }
+  .pillar-content h3 {
+    font-size: 1.1rem;
+  }
+  .pillar-closing {
+    margin-top: 2rem;
+    font-size: 1.15rem;
+  }
+  .pillar-closing strong {
+    font-size: 1.8rem;
+  }
+
+  /* --- Carrossel Clientes (CORREÇÃO PRINCIPAL) --- */
+  .section-benefits {
+    padding: 4rem 0;
+    overflow: hidden;
+  }
+  .section-benefits .content-wrapper {
+    padding: 0 5%;
+  }
+  .clients-gallery {
+    height: 220px;
+    gap: 0.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  .client-photo {
+    width: 160px;
+    height: 200px;
+    flex: 0 0 auto;
+  }
+
+  /* --- Seção Para Quem É --- */
+  .target-card {
+    padding: 3rem 2rem;
+  }
+  .target-list {
+    margin-top: 2rem;
+  }
+  .target-list li {
+    font-size: 1.1rem;
+    padding-left: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .target-list li::before {
+    font-size: 1.3rem;
+  }
+
+  /* --- Seção Quem Sou Eu --- */
+  .section-who-is .split-layout {
+    gap: 2rem;
+  }
+
+  /* --- Steps / Como Funciona --- */
+  .steps-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .step-card {
+    padding: 2rem;
+  }
+  .step-number {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .step-card h3 {
+    font-size: 1.25rem;
+  }
+
+  /* --- Preços --- */
+  .section-pricing {
+    padding-top: 4rem;
+  }
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .price-card {
+    padding: 3rem 2rem;
+  }
+  .price-highlight {
+    transform: none;
+  }
+  .price-highlight:hover {
+    transform: translateY(-5px);
+  }
+  .price-value {
+    font-size: 2.8rem;
+  }
+  .price-header h3 {
+    font-size: 1.8rem;
+  }
+
+  /* --- Programas --- */
+  .programs-box {
+    padding: 3rem 2rem;
+  }
+  .programs-intro {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+  }
+  .program-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1.5rem 0;
+  }
+  .program-name {
+    font-size: 1.5rem;
+  }
+  .program-price {
+    margin-left: 0;
+  }
+
+  /* --- Crédito --- */
+  .credit-box {
+    padding: 3rem 2rem;
+  }
+  .credit-text {
+    font-size: 1.1rem;
+  }
+
+  /* --- Vale Presente (Voucher) --- */
+  .section-voucher .split-layout {
+    gap: 2rem;
+  }
+  .voucher-image {
+    min-height: 300px;
+  }
+  .voucher-text {
+    padding-top: 1.5rem;
+  }
+  .voucher-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* --- FAQ --- */
+  .faq-question {
+    padding: 1.8rem 0;
+  }
+  .faq-question h3 {
+    font-size: 1.15rem;
+  }
+  .faq-icon {
+    font-size: 2rem;
+  }
+  .faq-answer p {
+    font-size: 1.05rem;
+    padding-bottom: 1.5rem;
+  }
+
+  /* --- Seção Fechamento --- */
+  .section-closing {
+    padding: 5rem 5%;
+  }
+  .closing-text {
+    font-size: 1.15rem;
+  }
+  .closing-text strong {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .closing-text p {
+    margin-bottom: 0.8rem;
+  }
+
+  /* Botões CTA na seção de fechamento */
+  .section-closing .content-wrapper > div[style] {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  /* --- Footer --- */
+  .footer {
+    padding: 4rem 5% 2rem;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-logo {
+    height: 70px;
+    margin-bottom: 1rem;
+  }
+  .footer-bottom {
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+  }
+  .footer-bottom p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  /* --- WhatsApp flutuante --- */
+  .fab-whatsapp {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+  .fab-whatsapp svg {
+    width: 26px;
+    height: 26px;
+  }
+}
