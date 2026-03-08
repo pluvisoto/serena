@@ -813,4 +813,6 @@ nav {
 .footer-col h4 { color: var(--white); }
 .footer-col p, .footer-social-link { color: rgba(255,255,255,0.7); }
 .footer-col a:hover { color: var(--accent-gold); }
+.footer .brand-name { color: rgba(255,255,255,0.7); }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); }
+.footer-bottom p { color: rgba(255,255,255,0.5); }
