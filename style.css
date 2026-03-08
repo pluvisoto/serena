@@ -4,6 +4,7 @@
   /* Alto Contraste Premium - Reajuste solicitado */
   --bg-primary: #F7F4EF;     /* Off-white limpo e super quente */
   --bg-secondary: #EDE6D9;   /* Bege bem estruturado para quebrar seções */
+  --bg-sage: #BBD1C3;        /* Verde sálvia suave e elegante */
   --accent-taupe: #9D8A78;   /* Taupe Escurecido (Maior Contraste) */
   --accent-gold: #B89053;    /* Dourado Ouro Velho (Intenso mas não gritante) */
   --brown-main: #2A1D18;     /* Espresso Absoluto (Quase preto, perfeito para títulos) */
@@ -177,7 +178,7 @@ nav {
   min-height: 100vh;
   padding: calc(var(--nav-height) + 4rem) 5% 4rem;
   overflow: hidden;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-sage);
   display: flex !important;
   align-items: center;
 }
@@ -259,13 +260,16 @@ nav {
   position: absolute;
   width: 500px;
   height: 650px;
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-sage);
   border-top-left-radius: 250px;
   border-top-right-radius: 250px;
-  border: 1px solid var(--accent-gold);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 10px solid var(--white);
   bottom: 0;
   z-index: 0;
-  box-shadow: 0 30px 60px rgba(42, 29, 24, 0.08);
+  box-shadow: 0 20px 40px rgba(42, 29, 24, 0.05); /* Sombra super leve */
+  box-sizing: border-box;
 }
 
 .hero-image {
@@ -464,50 +468,58 @@ nav {
   color: var(--white);
 }
 
+.section-benefits {
+  background-color: var(--brown-main);
+}
+
 .section-benefits .section-title {
   color: var(--white);
 }
 
-.clients-gallery {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  height: 860px; /* 3 fileiras (260px * 3 + gap) */
-  gap: 1.5rem;
-  overflow-x: auto;
-  overflow-y: hidden;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  padding-bottom: 1rem; /* Espaço pro scrollbar */
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
+.section-benefits .section-title i {
+  color: var(--accent-gold);
 }
 
-/* Customização leve da scrollbar do carrossel */
+.clients-gallery {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  gap: 1.5rem;
+  width: max-content;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  animation: scrollGallery 90s linear infinite;
+  will-change: transform;
+}
+
+.clients-gallery:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollGallery {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-25% - 0.375rem)); }
+}
+
+/* Esconde barras indesejadas */
 .clients-gallery::-webkit-scrollbar {
-  height: 8px;
-}
-.clients-gallery::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1); 
-  border-radius: 10px;
-}
-.clients-gallery::-webkit-scrollbar-thumb {
-  background: var(--accent-gold); 
-  border-radius: 10px;
+  display: none;
 }
 
 .client-photo {
-  width: 250px;
-  height: 250px;
+  height: 420px;
+  width: 320px;
   flex: 0 0 auto;
-  scroll-snap-align: start;
   border-radius: var(--border-radius-soft);
   overflow: hidden;
   position: relative;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
   border: 1px solid rgba(184, 144, 83, 0.2);
+  background-color: #1a120e; /* Fundo que combina com o tema para preencher o contain */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .client-photo:hover {
@@ -519,7 +531,7 @@ nav {
 .client-photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Não corta nenhuma foto */
   transition: transform 0.8s ease;
 }
 
@@ -591,9 +603,15 @@ nav {
 
 .steps-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 3.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2.5rem;
   margin-top: 5rem;
+}
+
+@media (min-width: 1024px) {
+  .steps-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .step-card {

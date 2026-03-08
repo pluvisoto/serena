@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- Botão WhatsApp Flutuante -->
-    <a href="#" class="fab-whatsapp" aria-label="Falar no WhatsApp">
+    <a href="https://wa.me/5519983233541?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20minha%20experi%C3%AAncia%20Serena" target="_blank" class="fab-whatsapp" aria-label="Falar no WhatsApp">
       <svg viewBox="0 0 24 24">
         <path d="M12.031 0C5.392 0 0 5.39 0 12.028c0 2.126.554 4.195 1.604 6.017L.52 23.472l5.584-1.464a12.001 12.001 0 005.927 1.564c6.64 0 12.031-5.389 12.031-12.027A12.03 12.03 0 0012.031 0zm0 21.572c-1.801 0-3.565-.483-5.11-1.398l-.367-.217-3.793.995.998-3.702-.238-.378A10.057 10.057 0 011.996 12.03c0-5.542 4.512-10.051 10.035-10.051C17.572 1.979 22.08 6.488 22.08 12.03s-4.508 10.051-10.049 10.051l.001-.509z" fill-rule="evenodd" clip-rule="evenodd"/>
         <path d="M17.532 14.155c-.276-.139-1.637-.808-1.89-1.002-.252-.194-.436-.304-.619-.055-.184.249-.714.908-.875 1.093-.161.185-.323.208-.599.069-.276-.139-1.168-.431-2.225-1.373-.822-.733-1.378-1.637-1.539-1.913-.162-.277-.018-.426.12-.564.124-.124.276-.323.414-.484.138-.162.184-.277.276-.462.092-.184.046-.346-.023-.484-.069-.139-.619-1.493-.848-2.046-.224-.539-.452-.465-.619-.474-.162-.008-.346-.008-.53-.008-.184 0-.484.069-.737.346-.253.277-.966.946-.966 2.308s.989 2.677 1.127 2.862c.138.184 1.954 2.977 4.73 4.138 2.308.97 3.064.848 3.639.778.68-.083 1.637-.669 1.868-1.315.23-.646.23-1.2.161-1.315-.069-.116-.252-.185-.529-.323z" fill-rule="evenodd" clip-rule="evenodd"/>
@@ -18,9 +18,9 @@
     <!-- Navbar Minimalista -->
     <nav>
       <a href="#" class="logo">
-        <img src="./assets/u_2.png" alt="Serena HeadSpa" style="height: 100%; object-fit: contain;" />
+        <img src="./assets/logo_nova.png" alt="Serena HeadSpa" style="height: 150%; object-fit: contain;" />
       </a>
-      <a href="https://wa.me/5519983233544?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20minha%20experi%C3%AAncia%20Serena" target="_blank" class="btn btn-primary nav-cta">Agendar Sessão</a>
+      <a href="https://cal.com/serena-headspa" target="_blank" class="btn btn-primary nav-cta">Agendar Sessão</a>
     </nav>
 
     <!-- MAIN WRAPPER -->
@@ -43,8 +43,8 @@
             </p>
             <span class="hero-complement">Uma pausa real para quem vive no automático.</span>
             <div class="hero-cta-group">
-              <a href="https://wa.me/5519983233544?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20minha%20experi%C3%AAncia%20Serena" target="_blank" class="btn btn-primary">Quero começar pela Descoberta</a>
-              <a href="#contato" class="btn btn-secondary">Falar no WhatsApp</a>
+              <a href="https://cal.com/serena-headspa" target="_blank" class="btn btn-primary">Quero começar pela Descoberta</a>
+              <a href="https://wa.me/5519983233541?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Serena" target="_blank" class="btn btn-secondary">Falar no WhatsApp</a>
             </div>
           </div>
           
@@ -153,7 +153,8 @@
         <div class="content-wrapper text-center">
           <h2 class="section-title">Olha só quem já viveu a <br><i>experiência Serena</i></h2>
           
-          <div class="clients-gallery">
+          <div class="clients-wrapper" style="overflow: hidden; width: 100vw; margin-left: calc(-50vw + 50%); margin-top: 4rem; margin-bottom: 4rem;">
+            <div class="clients-gallery">
             <div class="client-photo r-span-2">
               <img src="./assets/clientes/c1.jpg" alt="Cliente Serena HeadSpa" loading="lazy" />
             </div>
@@ -253,7 +254,27 @@
             <div class="client-photo">
               <img src="./assets/clientes/c33.jpg" alt="Cliente Serena HeadSpa" loading="lazy" />
             </div>
+            <div class="client-photo">
+              <img src="./assets/clientes/c34.jpg" alt="Cliente Serena HeadSpa" loading="lazy" />
+            </div>
+            </div>
           </div>
+          
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const gallery = document.querySelector(".clients-gallery");
+              if(gallery) {
+                // Clona as imagens vrias vezes para criar scroll infinito perfeito e sem interrupes
+                const images = Array.from(gallery.children);
+                for(let i = 0; i < 3; i++) {
+                  images.forEach(img => {
+                    const clone = img.cloneNode(true);
+                    gallery.appendChild(clone);
+                  });
+                }
+              }
+            });
+          </script>
           
           <div class="benefit-footer" style="margin-top: 4rem;">
             <p>Você entra carregando o ritmo do dia.</p>
@@ -286,7 +307,7 @@
                     <li>quer presentear alguém especial com algo que realmente marque</li>
                   </ul>
                   <div class="target-cta" style="margin-top: 3.5rem;">
-                    <a href="https://wa.me/5519983233544?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20minha%20experi%C3%AAncia%20Serena" target="_blank" class="btn btn-primary">Quero agendar meu momento</a>
+                    <a href="https://cal.com/serena-headspa" target="_blank" class="btn btn-primary">Quero agendar meu momento</a>
                   </div>
                </div>
             </div>
@@ -315,10 +336,8 @@
               </div>
             </div>
 
-            <div class="split-image">
-              <div class="arch-mask" style="border-radius: var(--border-radius-soft); height: 100%; border: none; background-color: var(--white);">
-                <img src="./assets/julia_perfil_3.png" alt="Julia Luvisoto - Fundadora Serena HeadSpa" style="width: 100%; height: 100%; object-fit: contain; object-position: bottom center;" />
-              </div>
+            <div class="split-image" style="display: flex; justify-content: center; align-items: flex-end;">
+              <img src="./assets/julia_nova.png" alt="Julia Luvisoto - Fundadora Serena HeadSpa" style="max-width: 140%; height: auto; transform: scale(1.15) translateY(-5px); filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));" />
             </div>
           </div>
         </div>
@@ -380,7 +399,7 @@
                 <p class="price-complement">Perfeita para quem deseja experimentar a sensação do HeadSpa antes de avançar para uma jornada completa.</p>
               </div>
               <div class="price-footer">
-                <a href="https://wa.me/5519983233544?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20minha%20experi%C3%AAncia%20Serena" target="_blank" class="btn btn-secondary" style="width:100%">Quero agendar a Descoberta</a>
+                <a href="https://cal.com/serena-headspa/descoberta-serena" target="_blank" class="btn btn-secondary" style="width:100%">Quero agendar a Descoberta</a>
               </div>
             </div>
 
@@ -398,7 +417,7 @@
                 <p class="price-complement">Perfeita para quem quer sair da rotina e viver uma experiência premium de autocuidado.</p>
               </div>
               <div class="price-footer">
-                <a href="https://wa.me/5519983233544?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20minha%20experi%C3%AAncia%20Serena" target="_blank" class="btn btn-primary" style="width:100%">Quero agendar a Imersão</a>
+                <a href="https://cal.com/serena-headspa/imersao-serena" target="_blank" class="btn btn-primary" style="width:100%">Quero agendar a Imersão</a>
               </div>
             </div>
 
@@ -415,7 +434,7 @@
                 <p class="price-complement">Perfeita para quem quer o protocolo mais completo e uma experiência de alto valor percebido.</p>
               </div>
               <div class="price-footer">
-                <a href="https://wa.me/5519983233544?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20minha%20experi%C3%AAncia%20Serena" target="_blank" class="btn btn-secondary" style="width:100%">Quero agendar a Exclusive</a>
+                <a href="https://cal.com/serena-headspa/exclusive-serena" target="_blank" class="btn btn-secondary" style="width:100%">Quero agendar a Exclusive</a>
               </div>
             </div>
 
@@ -448,7 +467,7 @@
           </p>
           
           <div style="margin-top: 3rem;">
-            <a href="#contato" class="btn btn-secondary">Quero saber mais sobre os programas</a>
+            <a href="https://wa.me/5519983233541?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20programas%20Serena" target="_blank" class="btn btn-secondary">Quero saber mais sobre os programas</a>
           </div>
         </div>
       </section>
@@ -465,7 +484,7 @@
             <p class="credit-text">Se decidir continuar no mesmo dia com um programa, o valor da sua primeira sessão pode ser aproveitado como crédito.</p>
             <p class="credit-text" style="margin-bottom: 2.5rem;">Isso permite que você conheça a experiência com mais segurança e decida com tranquilidade.</p>
             
-            <a href="https://wa.me/5519983233544?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20minha%20experi%C3%AAncia%20Serena" target="_blank" class="btn btn-primary">Quero começar pela Descoberta Serena</a>
+            <a href="https://cal.com/serena-headspa/descoberta-serena-credito" target="_blank" class="btn btn-primary">Quero começar pela Descoberta Serena</a>
           </div>
         </div>
       </section>
@@ -476,10 +495,9 @@
       <section class="section section-voucher reveal" id="presente">
         <div class="content-wrapper">
           <div class="split-layout">
-            <div class="split-image voucher-image">
-              <div class="arch-mask" style="border-radius: var(--border-radius-soft); height: 100%; border: none;">
-                <img src="./assets/u_1.png" alt="Voucher Presente Serena" style="width: 100%; height: 100%; object-fit: contain; object-position: center;" />
-              </div>
+            <div class="split-image voucher-image" style="background-color: var(--brown-main); border-radius: var(--border-radius-soft); display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 500px; text-align: center; border: 1px solid var(--accent-gold); box-shadow: inset 0 0 40px rgba(0,0,0,0.5);">
+              <img src="./assets/logo_nova.png" alt="Logo Serena" style="width: 200px; object-fit: contain; margin-bottom: 2rem;" />
+              <h3 style="font-family: var(--font-heading); font-size: 3rem; color: var(--accent-gold); font-style: italic; font-weight: 300; letter-spacing: 2px; line-height: 1.3;">Vale uma<br>Experiência Serena</h3>
             </div>
             
             <div class="split-text voucher-text">
@@ -493,7 +511,7 @@
               <strong>"Você merece se cuidar."</strong></p>
               
               <div style="margin-top: 3rem;">
-                <a href="#contato" class="btn btn-primary">Quero presentear alguém</a>
+                <a href="https://wa.me/5519983233541?text=Ol%C3%A1%2C%20gostaria%20de%20adquirir%20um%20Vale%20Presente%20Serena" target="_blank" class="btn btn-primary">Quero presentear alguém</a>
               </div>
             </div>
           </div>
@@ -568,17 +586,17 @@
       <!-- ================================== -->
       <section class="section section-closing reveal" id="agendamento">
         <div class="content-wrapper text-center">
-          <h2 class="section-title" style="color: var(--white);">Você merece uma pausa que <i>realmente pareça pausa</i></h2>
+          <h2 class="section-title" style="color: var(--brown-main);">Você merece uma pausa que <i>realmente pareça pausa</i></h2>
           
-          <div class="closing-text">
+          <div class="closing-text" style="color: var(--brown-main);">
             <p>Nem todo descanso descansa.<br>Nem todo cuidado acolhe.<br>Nem toda pausa faz você sentir que voltou para si.</p>
             <p style="margin-top: 2rem;"><strong>O Serena HeadSpa foi criado para entregar exatamente isso:</strong><br>um momento real de leveza, presença e cuidado profundo.</p>
             <p style="margin-top: 2rem;">Escolha sua experiência e agende seu momento.</p>
           </div>
           
-          <div class="hero-cta-group" style="margin-top: 3.5rem;">
-            <a href="#contato" class="btn btn-primary" style="background-color: var(--white); color: var(--brown-main); border-color: var(--white);">Quero agendar meu Serena HeadSpa</a>
-            <a href="#contato" class="btn btn-secondary" style="color: var(--white); border-color: var(--white);">Falar no WhatsApp</a>
+          <div style="margin-top: 3.5rem; display: flex; flex-direction: row; gap: 1.5rem; justify-content: center; align-items: center; flex-wrap: wrap; width: 100%;">
+            <a href="https://cal.com/serena-headspa" target="_blank" class="btn btn-primary" style="background-color: var(--brown-main); color: var(--white); border-color: var(--brown-main);">Quero agendar meu Serena HeadSpa</a>
+            <a href="https://wa.me/5519983233541?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Serena" target="_blank" class="btn btn-secondary" style="color: var(--brown-main); border-color: var(--brown-main);">Falar no WhatsApp</a>
           </div>
         </div>
       </section>
@@ -590,23 +608,28 @@
         <div class="content-wrapper footer-content">
           
           <div class="footer-brand">
-            <a href="#" class="logo footer-logo">
-               <img src="./assets/u_2.png" alt="Serena HeadSpa" style="height: 100%; object-fit: contain;" />
+            <a href="#" class="logo footer-logo" style="margin-bottom: 1.5rem;">
+               <img src="./assets/logo_nova.png" alt="Serena HeadSpa" style="height: 80px; object-fit: contain;" />
             </a>
-            <p class="brand-name">Serena HeadSpa Clinic</p>
+            <p class="brand-name">Serena HeadSpa</p>
           </div>
           
           <div class="footer-links">
             <div class="footer-col">
               <h4>Contato</h4>
-              <p>[INSERIR WHATSAPP]</p>
-              <a href="[INSERIR INSTAGRAM]" target="_blank" class="footer-social-link">Instagram: @serenaclinic</a>
+              <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                <a href="https://wa.me/5519983233541" target="_blank" style="color: rgba(255,255,255,0.7); text-decoration: none; display: flex; align-items: center; gap: 0.6rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.571-1.2A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.003 0-3.887-.58-5.478-1.584l-.393-.234-4.073 1.068 1.087-3.97-.257-.41A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>(19) 98323-3541</a>
+                <a href="https://instagram.com/headspaserenajl" target="_blank" class="footer-social-link" style="display: flex; align-items: center; gap: 0.6rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>@headspaserenajl</a>
+                <a href="https://instagram.com/julialuvisoto" target="_blank" class="footer-social-link" style="display: flex; align-items: center; gap: 0.6rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>@julialuvisoto</a>
+                <a href="https://tiktok.com/@julialuvisoto" target="_blank" class="footer-social-link" style="display: flex; align-items: center; gap: 0.6rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>@julialuvisoto</a>
+              </div>
             </div>
             
             <div class="footer-col">
               <h4>Endereço</h4>
-              <p>[INSERIR ENDEREÇO DA CLÍNICA]</p>
-              <p>[INSERIR HORÁRIO DE FUNCIONAMENTO]</p>
+              <p>Av. Doutor Durval Nicolau, 3472</p>
+              <p>Clínica Nova Persona - Sala 22B</p>
+              <p>São João da Boa Vista - SP</p>
             </div>
           </div>
           
