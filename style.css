@@ -794,7 +794,9 @@ nav {
 .section-closing { background-color: var(--bg-primary); padding: 12rem 5%; }
 .closing-text { max-width: 900px; margin: 0 auto; font-size: 1.5rem; color: var(--brown-main); font-weight: 500;}
 .closing-text p { margin-bottom: 1rem; }
-.closing-text strong { color: var(--accent-gold); font-family: var(--font-heading); font-size: 3rem; font-weight: 600; font-style: italic; display: block; margin-top: 3rem; margin-bottom: 1.5rem; }
+.closing-text strong { color: var(--brown-main); font-family: var(--font-heading); font-size: 3rem; font-weight: 600; font-style: italic; display: block; margin-top: 3rem; margin-bottom: 1.5rem; }
+.section-closing .section-title { color: var(--brown-main); }
+.section-closing .section-title i { color: var(--brown-main); font-weight: 500; }
 
 .footer { background-color: var(--brown-main); padding: 7rem 5% 3rem; color: var(--white); }
 .footer-logo {
