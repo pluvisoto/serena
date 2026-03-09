@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <title>Programa Exclusive Serena | Serena HeadSpa</title>
+    <meta name="description" content="Transforme o melhor da Serena em uma rotina com mais vantagem e mais constância." />
+    <!-- Usando o mesmo CSS padronizado das demais páginas de experiências -->
+    <link rel="stylesheet" href="./descobrindo-serena.css" />
+    <style>
+      .price-drop-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 3rem;
+      }
+      @media (min-width: 768px) {
+        .price-drop-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 2rem;
+        }
+      }
+      .price-drop-card {
+        background-color: var(--color-white);
+        border: 1px solid var(--color-border);
+        padding: 3rem 2rem;
+        border-radius: 4px;
+        text-align: center;
+      }
+      .price-drop-card.highlight {
+        border-color: var(--color-accent);
+        background-color: var(--color-bg-primary);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+      }
+      .pd-label {
+        font-family: var(--font-secondary);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-text-light);
+        margin-bottom: 0.5rem;
+      }
+      .pd-value {
+        font-family: var(--font-primary);
+        font-size: 3rem;
+        color: var(--color-text-main);
+      }
+      .pd-value span {
+        font-size: 1.2rem;
+        font-family: var(--font-secondary);
+        color: var(--color-text-light);
+      }
+      .pd-discount-badge {
+        display: inline-block;
+        background-color: var(--color-accent);
+        color: var(--color-white);
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- ================================== -->
+    <!-- NAVBAR FIXA                        -->
+    <!-- ================================== -->
+    <nav>
+      <a href="/" class="logo">
+        <img src="./assets/logo_nova.png" alt="Serena HeadSpa" />
+      </a>
+      <a href="https://cal.com/serena-headspa/programa-exclusive-serena" target="_blank" class="btn-nav">Agendar Programa</a>
+    </nav>
+
+    <!-- ================================== -->
+    <!-- SEÇÃO 1: HERO                      -->
+    <!-- ================================== -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero-badge">Programa de Continuidade</span>
+        <h1>Transforme o melhor da Serena em uma <em>rotina</em> com mais vantagem e constância.</h1>
+        <p class="hero-body">O <strong>Programa Exclusive Serena</strong> foi criado para quem quer manter a experiência mais completa da marca como parte da rotina.</p>
+        <p class="hero-body">Com 4 sessões da Exclusive Serena, você garante continuidade, profundidade e um nível mais alto de cuidado ao longo do tempo.</p>
+        
+        <div class="hero-meta" style="flex-direction: column; align-items: center; gap: 0.5rem; margin-top: 3rem;">
+          <span class="meta-duration" style="font-size: 1.2rem; background: var(--color-bg-secondary); padding: 0.5rem 1.5rem; border-radius: 20px;">4 sessões da Exclusive Serena (90 minutos cada)</span>
+          <div style="margin-top: 1.5rem; padding: 2rem; border: 1px solid var(--color-accent); border-radius: 4px; background: rgba(255,255,255,0.4); text-align: center;">
+            <p style="text-decoration: line-through; color: var(--color-text-light); font-size: 1.1rem; margin-bottom: 0.2rem;">De R$ 1.040</p>
+            <p style="font-family: var(--font-primary); font-size: 3rem; color: var(--color-text-main); line-height: 1; margin-bottom: 0.5rem;">Por R$ 880</p>
+            <p style="font-weight: 600; color: var(--color-accent); font-size: 1.3rem;">3x de R$ 293,33</p>
+          </div>
+        </div>
+
+        <div class="cta-group">
+          <a href="https://cal.com/serena-headspa/programa-exclusive-serena" target="_blank" class="btn btn-primary">Quero esse programa</a>
+          <a href="https://wa.me/5519983233541?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Programa%20Exclusive%20Serena" target="_blank" class="btn btn-secondary">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================== -->
+    <!-- SEÇÃO 2: SUA SESSÃO SAI DE         -->
+    <!-- ================================== -->
+    <section class="section section-why" style="background-color: var(--color-bg-secondary);">
+      <div class="container">
+        <h2>Sua sessão sai de R$ 260 por <em>R$ 220</em></h2>
+        <div class="why-content">
+          <p style="text-align: center; max-width: 800px; margin: 0 auto;">Quando você transforma a Exclusive Serena em programa, o valor por sessão cai sem reduzir a profundidade da experiência.</p>
+          <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">Em vez de pagar R$ 260 por sessão avulsa, você passa a pagar o equivalente a <strong>R$ 220 por sessão</strong> ao entrar no programa com o crédito da sua primeira sessão.</p>
+          
+          <div class="price-drop-grid">
+            <div class="price-drop-card">
+              <p class="pd-label">Sessão Avulsa</p>
+              <p class="pd-value">R$ 260<span style="font-size: 1rem;">/sessão</span></p>
+            </div>
+            <div class="price-drop-card highlight">
+              <span class="pd-discount-badge">Mais Econômico</span>
+              <p class="pd-label">No Programa (com crédito)</p>
+              <p class="pd-value" style="color: var(--color-accent);">R$ 220<span>/sessão</span></p>
+            </div>
+          </div>
+          
+          <p class="why-closing" style="margin-top: 3rem;">Você mantém o protocolo mais completo da Serena com uma condição muito mais inteligente para continuar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================== -->
+    <!-- BLOCO DE CRÉDITO + PROGRAMAS       -->
+    <!-- ================================== -->
+    <section class="section section-credit">
+      <div class="container">
+        <div class="credit-box">
+          <h2>Transforme sua primeira sessão em R$ 160 de bônus no seu programa</h2>
+          <p class="credit-main-text">Se você decidir, imediatamente após a sua primeira sessão conosco, continuar sua jornada, o valor pago se transforma em R$ 160 de crédito para entrar em um de nossos Programas.</p>
+          <p class="credit-sub-text">Uma forma mais segura de viver a experiência primeiro e decidir depois com mais clareza.</p>
+          
+          <div style="background: var(--color-bg-secondary); padding: 2.5rem; border-radius: 4px; margin: 2.5rem 0; text-align: left; border-left: 3px solid var(--color-accent);">
+            <h3 style="font-family: var(--font-primary); font-size: 1.5rem; color: var(--color-text-main); margin-bottom: 1.5rem;">No Programa Exclusive Serena, isso significa:</h3>
+            <ul style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 1rem; font-size: 1.15rem; color: var(--color-text-main);">✦ <strong>De R$ 1.040 por R$ 880</strong></li>
+              <li style="margin-bottom: 1rem; font-size: 1.15rem; color: var(--color-text-main);">✦ <strong>3x de R$ 293,33</strong></li>
+              <li style="font-size: 1.15rem; color: var(--color-text-main);">✦ Sua sessão sai de R$ 260 por apenas <strong>R$ 220</strong></li>
+            </ul>
+          </div>
+          
+          <div class="credit-warning">
+            <span>Condição válida exclusivamente na sua primeira sessão na Serena, decidindo adquirir o programa imediatamente após o atendimento.</span>
+          </div>
+          <a href="https://cal.com/serena-headspa/descoberta-serena" target="_blank" class="btn btn-primary" style="margin-top: 1.5rem">Quero começar agendando minha 1ª sessão</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================== -->
+    <!-- SEÇÃO: POR QUE VALE A PENA         -->
+    <!-- ================================== -->
+    <section class="section section-why" style="background-color: var(--color-bg-secondary);">
+      <div class="container">
+        <h2>Para quem quer viver o <em>melhor da Serena</em> de forma recorrente</h2>
+        <div class="why-content">
+          <p>O Programa Exclusive Serena não foi feito para uma pausa pontual. Ele foi feito para quem quer manter a experiência mais completa da marca como parte da rotina.</p>
+          <p>Com isso, você garante mais constância, mais profundidade, mais conforto e uma continuidade que faz sentido para quem valoriza o melhor da experiência Serena.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================== -->
+    <!-- SEÇÃO: O QUE ESTÁ INCLUSO          -->
+    <!-- ================================== -->
+    <section class="section section-includes">
+      <div class="container">
+        <h2>O que você recebe <em>nesse programa</em></h2>
+        <p class="includes-intro">Neste programa, você garante 4 sessões da Exclusive Serena. Cada sessão inclui:</p>
+        
+        <div class="includes-grid">
+          <div class="include-item include-base">
+            <span class="include-icon">✦</span>
+            <span>Tudo da Imersão Serena</span>
+          </div>
+          <div class="include-item include-new">
+            <span class="include-icon-new">+</span>
+            <span>Relaxamento com pedras quentes</span>
+          </div>
+          <div class="include-item include-new">
+            <span class="include-icon-new">+</span>
+            <span>Massagem relaxante na lombar</span>
+          </div>
+          <div class="include-item include-new">
+            <span class="include-icon-new">+</span>
+            <span>Aplicação de Reiki</span>
+          </div>
+          <div class="include-item include-new">
+            <span class="include-icon-new">+</span>
+            <span>Orientações individualizadas para tratamento capilar</span>
+          </div>
+        </div>
+        
+        <p style="text-align: center; margin-top: 3rem; font-size: 1.1rem; color: var(--color-text-light);">Cada sessão da Exclusive Serena tem 90 minutos e representa o protocolo mais completo da marca.</p>
+      </div>
+    </section>
+
+    <!-- ================================== -->
+    <!-- SEÇÃO: COMPARATIVO                 -->
+    <!-- ================================== -->
+    <section class="section section-compare" style="background-color: var(--color-bg-secondary);">
+      <div class="container">
+        <h2>Compare os programas e escolha o nível de <em>continuidade ideal</em></h2>
+        <p class="compare-subtitle">Os dois programas foram pensados para quem deseja transformar autocuidado em rotina.<br>A diferença está no nível de profundidade e no valor por sessão que você quer manter.</p>
+
+        <div class="compare-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+
+          <!-- Card Programa Imersão -->
+          <div class="compare-card">
+            <div class="card-header">
+              <h3>Programa Imersão Serena</h3>
+              <span class="card-duration">4 sessões</span>
+              <p style="text-decoration: line-through; color: var(--color-text-light); font-size: 0.95rem; margin-top: 1rem;">De R$ 880</p>
+              <span class="card-price" style="display: block; font-size: 2.2rem; color: var(--color-text-main);">R$ 720</span>
+              <p style="color: var(--color-accent); font-weight: 600; font-size: 1.1rem;">3x de R$ 240,00</p>
+              <p style="font-size: 0.95rem; margin-top: 0.5rem; border-top: 1px solid var(--color-border); padding-top: 0.8rem;">Sessão sai de R$ 220 por <strong>R$ 180</strong></p>
+            </div>
+            <ul class="card-features">
+              <li class="included">Duração: 60 minutos</li>
+              <li class="included">Tudo do Descobrindo Serena</li>
+              <li class="included">Limpeza suave da face</li>
+              <li class="included">Massagem e drenagem facial</li>
+              <li class="included">Massagem relaxante nos pés</li>
+              <li class="included">Massagem relaxante nas mãos</li>
+              <li class="excluded">Relaxamento com pedras quentes</li>
+              <li class="excluded">Massagem relaxante na lombar</li>
+              <li class="excluded">Aplicação de Reiki</li>
+              <li class="excluded">Orientações para tratamento capilar</li>
+            </ul>
+            <a href="/programa-imersao-serena.html" class="btn btn-card-secondary">Ver programa</a>
+          </div>
+
+          <!-- Card Programa Exclusive — DESTAQUE -->
+          <div class="compare-card card-highlight">
+            <div class="card-badge">O Mais Completo</div>
+            <div class="card-header">
+              <h3>Programa Exclusive Serena</h3>
+              <span class="card-duration">4 sessões</span>
+              <p style="text-decoration: line-through; color: var(--color-text-light); font-size: 0.95rem; margin-top: 1rem;">De R$ 1.040</p>
+              <span class="card-price" style="display: block; font-size: 2.8rem; color: var(--color-text-main);">R$ 880</span>
+              <p style="color: var(--color-accent); font-weight: 600; font-size: 1.25rem;">3x de R$ 293,33</p>
+              <p style="font-size: 1rem; margin-top: 0.5rem; border-top: 1px solid var(--color-border); padding-top: 0.8rem; color: var(--color-text-main);">Sessão sai de R$ 260 por <strong>R$ 220</strong></p>
+            </div>
+            <ul class="card-features">
+              <li class="included">Duração: 90 minutos</li>
+              <li class="included">Tudo do Descobrindo Serena</li>
+              <li class="included">Limpeza suave da face</li>
+              <li class="included">Massagem e drenagem facial</li>
+              <li class="included">Massagem relaxante nos pés</li>
+              <li class="included">Massagem relaxante nas mãos</li>
+              <li class="included" style="font-weight: 500;">Relaxamento com pedras quentes</li>
+              <li class="included" style="font-weight: 500;">Massagem relaxante na lombar</li>
+              <li class="included" style="font-weight: 500;">Aplicação de Reiki</li>
+              <li class="included" style="font-weight: 500;">Orientações para tratamento capilar</li>
+            </ul>
+            <a href="https://cal.com/serena-headspa/programa-exclusive-serena" target="_blank" class="btn btn-card-primary">Quero esse programa</a>
+          </div>
+
+        </div>
+
+        <div class="compare-bottom" style="margin-top: 4rem;">
+          <h3>Por que o Programa Exclusive <em>vale a pena</em></h3>
+          <p>Porque ele reúne continuidade, economia e a versão mais completa da experiência Serena.</p>
+          <p>Você reduz o valor por sessão, recebe o bônus de R$ 160 da sua primeira sessão e mantém o melhor da marca como parte da rotina.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================== -->
+    <!-- SEÇÃO 5: FECHAMENTO                -->
+    <!-- ================================== -->
+    <section class="section section-closing">
+      <div class="container text-center">
+        <h2>Quando a ideia é manter o máximo da Serena na rotina, <em>esse é o programa certo</em></h2>
+        <p class="closing-body">O Programa Exclusive Serena é para quem quer transformar o melhor da experiência Serena em uma escolha recorrente, com mais constância e uma condição melhor por sessão.</p>
+        <div class="cta-group">
+          <a href="https://cal.com/serena-headspa/programa-exclusive-serena" target="_blank" class="btn btn-primary">Quero esse programa</a>
+          <a href="https://wa.me/5519983233541?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Programa%20Exclusive%20Serena" target="_blank" class="btn btn-secondary">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================== -->
+    <!-- FOOTER                             -->
+    <!-- ================================== -->
+    <footer>
+      <div class="container">
+        <a href="/" class="footer-logo">
+          <img src="./assets/logo_nova.png" alt="Serena HeadSpa" />
+        </a>
+        <p class="footer-copy">© 2026 Serena HeadSpa. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5519983233541?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20o%20Programa%20Exclusive%20Serena" class="whatsapp-btn" target="_blank" aria-label="Falar pelo WhatsApp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+  </body>
+</html>
