@@ -10,6 +10,7 @@ export default defineConfig({
         imersao: resolve(__dirname, 'imersao-serena.html'),
         exclusive: resolve(__dirname, 'exclusive-serena.html'),
         programa_exclusive: resolve(__dirname, 'programa-exclusive-serena.html'),
+        programa_imersao: resolve(__dirname, 'programa-imersao-serena.html'),
       },
     },
   },
