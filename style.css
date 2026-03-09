@@ -29,6 +29,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -147,9 +148,10 @@ nav {
 }
 
 .btn-secondary {
-  background-color: transparent;
+  background-color: var(--white);
   color: var(--brown-main);
-  border: 1px solid var(--brown-main);
+  border: 2px solid var(--brown-main);
+  box-shadow: 0 6px 20px rgba(42, 29, 24, 0.1);
 }
 
 .btn-secondary:hover {
@@ -823,7 +825,7 @@ nav {
 @media (max-width: 768px) {
   /* --- Variáveis e Base --- */
   :root {
-    --section-padding: 4rem 5%;
+    --section-padding: 3rem 5%;
     --nav-height: 70px;
   }
 
@@ -836,21 +838,30 @@ nav {
     padding: 0 4%;
   }
   .logo {
-    height: 45px;
+    height: 55px;
   }
   .nav-cta {
-    font-size: 0.75rem;
-    padding: 0.8rem 1.5rem;
+    font-size: 0.7rem;
+    padding: 0.7rem 1.2rem;
     letter-spacing: 1px;
   }
 
   /* --- Botões --- */
   .btn {
-    padding: 1rem 2rem;
+    padding: 1.15rem 2.5rem;
     font-size: 0.85rem;
     letter-spacing: 1.5px;
     width: 100%;
     justify-content: center;
+    border-radius: 6px;
+    box-shadow: 0 6px 20px rgba(42, 29, 24, 0.15);
+  }
+  .btn-primary {
+    box-shadow: 0 8px 25px rgba(42, 29, 24, 0.25);
+  }
+  .btn-secondary {
+    background-color: var(--white);
+    border-width: 2px;
   }
   .hero-cta-group {
     flex-direction: column;
@@ -890,7 +901,7 @@ nav {
 
   /* --- Seções Gerais --- */
   .section {
-    padding: 4rem 5%;
+    padding: 3rem 5%;
   }
   .section-title {
     font-size: clamp(1.8rem, 7vw, 2.5rem);
@@ -902,7 +913,7 @@ nav {
 
   /* --- Seção Dor (Pain) --- */
   .section-pain {
-    padding: 4rem 5%;
+    padding: 3rem 5%;
   }
   .pain-text-block {
     font-size: 1.15rem;
@@ -943,7 +954,7 @@ nav {
 
   /* --- Carrossel Clientes (CORREÇÃO PRINCIPAL) --- */
   .section-benefits {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
     overflow: hidden;
   }
   .section-benefits .content-wrapper {
