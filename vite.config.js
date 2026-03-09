@@ -7,6 +7,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         descobrindo: resolve(__dirname, 'descobrindo-serena.html'),
+        imersao: resolve(__dirname, 'imersao-serena.html'),
       },
     },
   },

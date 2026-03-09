@@ -331,6 +331,33 @@ nav {
   margin-top: 2px;
 }
 
+.includes-intro {
+  font-size: 1.1rem;
+  color: var(--text-body);
+  margin-bottom: 0.5rem;
+  max-width: 650px;
+}
+
+.include-base {
+  grid-column: 1 / -1;
+  background: var(--bg-warm);
+  border-color: var(--accent-gold);
+  font-weight: 600;
+}
+
+.include-new {
+  background: var(--white);
+  border: 1px solid rgba(184, 144, 83, 0.25);
+}
+
+.include-icon-new {
+  color: var(--accent-gold);
+  font-size: 1.1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
 /* ========================================= */
 /* SEÇÃO 4: COMPARATIVO                      */
 /* ========================================= */
