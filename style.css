@@ -738,41 +738,179 @@ nav {
 /* ========================================= */
 /* SEÇÃO 8: PROGRAMAS DE CONTINUIDADE        */
 /* ========================================= */
-.section-programs { background-color: var(--bg-secondary); }
-.programs-intro { font-size: 1.4rem; color: var(--brown-main); margin-bottom: 4rem; font-weight: 500; }
-
-.programs-box {
-  background: var(--white);
-  max-width: 850px;
-  margin: 0 auto;
-  border-radius: var(--border-radius-soft);
-  padding: 5rem 4rem;
-  box-shadow: 0 20px 50px rgba(42, 29, 24, 0.05);
-  border: 1px solid rgba(42, 29, 24, 0.1);
+/* SEÇÃO DE CONTINUIDADE E CRÉDITO           */
+/* ========================================= */
+.section-continuity {
+  background-color: var(--bg-secondary);
 }
 
-.program-item { display: flex; justify-content: space-between; align-items: center; padding: 2.5rem 0; }
-.program-item p { margin-bottom: 0;}
-.program-divider { height: 1px; background-color: rgba(42, 29, 24, 0.15); width: 100%; }
-
-.program-name { font-family: var(--font-heading); font-size: 2rem; color: var(--brown-main); font-weight: 600; }
-.program-details { font-size: 1.3rem; font-weight: 600; color: var(--text-dark); }
-.program-price { font-weight: 700; color: var(--accent-gold); font-size: 1.6rem; margin-left: 1rem; }
-
-/* ========================================= */
-/* SEÇÕES FINAIS: CRÉDITO, VOUCHER, FAQ, ETC */
-/* ========================================= */
-.section-credit { background-color: var(--white); }
-.credit-box {
-  background-color: var(--bg-primary);
-  border: 2px solid var(--accent-gold);
-  border-radius: var(--border-radius-soft);
-  padding: 7rem 4rem;
-  max-width: 900px;
-  margin: 0 auto;
-  box-shadow: 0 30px 60px rgba(42, 29, 24, 0.08);
+.section-continuity .section-title {
+  margin-bottom: 1.5rem;
 }
-.credit-text { font-size: 1.35rem; color: var(--text-dark); margin-bottom: 1.8rem; font-weight: 500;}
+
+.continuity-subtitle {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.credit-highlight-box {
+  background-color: var(--white);
+  border: 1px solid rgba(184, 144, 83, 0.4);
+  border-radius: var(--border-radius-soft);
+  padding: 3rem;
+  max-width: 800px;
+  margin: 0 auto 5rem;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(42, 29, 24, 0.05);
+}
+
+.credit-highlight-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-gold);
+  border-top-left-radius: var(--border-radius-soft);
+  border-top-right-radius: var(--border-radius-soft);
+}
+
+.credit-value {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  color: var(--brown-main);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.credit-highlight-box p {
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.credit-highlight-box span {
+  font-size: 1rem;
+  color: var(--text-light);
+  display: block;
+}
+
+.compare-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--brown-main);
+  margin-bottom: 3.5rem;
+}
+
+.programs-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto 5rem;
+}
+
+.program-compare-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius-soft);
+  padding: 3.5rem 2.5rem;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(42, 29, 24, 0.03);
+  border: 1px solid rgba(42, 29, 24, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.program-card-header {
+  margin-bottom: 1.5rem;
+}
+
+.program-card-header h4 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--brown-main);
+  margin-bottom: 0.5rem;
+}
+
+.program-sessions {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background-color: var(--bg-warm);
+  color: var(--accent-taupe);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.program-card-desc {
+  color: var(--text-body);
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.program-pricing {
+  border-top: 1px solid rgba(42, 29, 24, 0.1);
+  padding-top: 2rem;
+}
+
+.price-original {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  text-decoration: line-through;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.price-final {
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  color: var(--brown-main);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.price-installments {
+  font-size: 1.25rem;
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+.continuity-footer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.continuity-warning {
+  display: inline-block;
+  background-color: var(--bg-warm);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-taupe);
+}
+
+.continuity-closing {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+}
+
+/* ========================================= */
+/* SEÇÕES FINAIS: VOUCHER, FAQ, ETC          */
+/* ========================================= */
 
 .section-voucher { background-color: var(--brown-main); color: var(--white); }
 .section-voucher .section-title { color: var(--white); }
@@ -1035,32 +1173,54 @@ nav {
     font-size: 1.8rem;
   }
 
-  /* --- Programas --- */
-  .programs-box {
-    padding: 3rem 2rem;
+  /* --- Continuidade e Crédito --- */
+  .section-continuity {
+    padding: 5rem 0;
   }
-  .programs-intro {
-    font-size: 1.15rem;
-    margin-bottom: 2rem;
+  .section-continuity .section-title {
+    font-size: 2rem;
   }
-  .program-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    padding: 1.5rem 0;
+  .continuity-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
   }
-  .program-name {
-    font-size: 1.5rem;
+  .credit-highlight-box {
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 3rem;
   }
-  .program-price {
-    margin-left: 0;
+  .credit-value {
+    font-size: 2.2rem;
   }
-
-  /* --- Crédito --- */
-  .credit-box {
-    padding: 3rem 2rem;
+  .credit-highlight-box p {
+    font-size: 1.1rem;
   }
-  .credit-text {
+  .compare-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .programs-compare-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3.5rem;
+  }
+  .program-compare-card {
+    padding: 2.5rem 2rem;
+  }
+  .program-card-header h4 {
+    font-size: 1.6rem;
+  }
+  .program-pricing {
+    padding-top: 1.5rem;
+  }
+  .price-final {
+    font-size: 2.2rem;
+  }
+  .continuity-warning {
+    font-size: 0.75rem;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .continuity-closing {
     font-size: 1.1rem;
   }
 
