@@ -8,6 +8,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         descobrindo: resolve(__dirname, 'descobrindo-serena.html'),
         imersao: resolve(__dirname, 'imersao-serena.html'),
+        exclusive: resolve(__dirname, 'exclusive-serena.html'),
       },
     },
   },
